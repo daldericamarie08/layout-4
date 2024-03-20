@@ -87,3 +87,15 @@ footer {
     text-align: center;
 } 
 
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+    .column1, .column2 {
+        flex-basis: auto; /* Allow columns to take up available space equally */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .sub-column1, .sub-column2 {
+        width: 100%; /* Make sub-columns take up full width on smaller screens */
+    }
+}
